@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _8dbc61e11c-20241220 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Sep 19 2025
+Time   : 15:49:09
+Host   : ubuntu-linux-2404
+PID    : 46239
+I/O    : uncollated
+Case   : /home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+
+Creating topology patches - from boundary section
+
+Creating block mesh topology - scaling/transform applied later
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list (topological search)...
+
+Creating polyMesh from blockMesh
+Creating points with scale (0.001 0.001 0.001)
+    Block 0 cell size :
+        i : 6.6666667e-10 .. 6.6666667e-10
+        j : 6.6666667e-10 .. 6.6666667e-10
+        k : 1e-08 .. 1e-08
+
+Creating cells
+Creating patches
+No patch pairs to merge
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (1e-06 5e-07 1e-08)
+  nPoints: 2254502
+  nCells: 1125000
+  nFaces: 4502250
+  nInternalFaces: 2247750
+----------------
+Patches
+----------------
+  patch 0 (start: 2247750 size: 3000) name: walls
+  patch 1 (start: 2250750 size: 750) name: inlet
+  patch 2 (start: 2251500 size: 750) name: outlet
+  patch 3 (start: 2252250 size: 2250000) name: frontandback
+
+End
+

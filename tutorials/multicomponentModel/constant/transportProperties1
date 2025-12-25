@@ -1,0 +1,29 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2106                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+transportModel  Newtonian;
+
+nu		[0 2 -1 0 0 0 0] Viscorig;
+nuBulk		[0 2 -1 0 0 0 0] Visc_Bulk;
+
+nu_walls	[0 2 -1 0 0 0 0] Visc_walls;
+dist_walls	[0 1 0 0 0 0 0] Dist_walls;
+
+nu_fixedWalls	[0 2 -1 0 0 0 0] Visc_fixedWalls;
+dist_fixedWalls	[0 1 0 0 0 0 0] Dist_fixedWalls;
+
+// ************************************************************************* //

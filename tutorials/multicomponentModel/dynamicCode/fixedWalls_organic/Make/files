@@ -1,0 +1,6 @@
+/* dynamicCode:
+ * SHA1 = c9bb13333d38b9c8824b782ded2564110a395884
+ */
+mixedFvPatchFieldTemplate.C
+
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libfixedWalls_organic_c9bb13333d38b9c8824b782ded2564110a395884

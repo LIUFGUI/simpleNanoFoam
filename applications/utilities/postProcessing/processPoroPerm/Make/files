@@ -1,0 +1,3 @@
+processPoroPerm.C
+
+EXE = $(nanoFOAM_APPBIN)/processPoroPerm

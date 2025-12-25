@@ -1,0 +1,4 @@
+sets/faceSources/collapsingFace/collapsingFace.C
+
+
+LIB = $(nanoFOAM_LIBBIN)/libmeshToolsNanoFOAM

@@ -1,0 +1,3 @@
+simpleNanoFoam.C
+
+EXE = $(nanoFOAM_APPBIN)/simpleNanoFoam

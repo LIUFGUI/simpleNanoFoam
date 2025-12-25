@@ -1,0 +1,1 @@
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libfixedWalls_clay_1eaf784f08235f873bef1f75ebfac0ec69a42369

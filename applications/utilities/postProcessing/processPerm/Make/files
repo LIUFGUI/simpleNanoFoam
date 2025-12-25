@@ -1,0 +1,3 @@
+processPerm.C
+
+EXE = $(GCFOAM_APPBIN)/processPerm

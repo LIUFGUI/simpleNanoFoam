@@ -1,0 +1,89 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _8dbc61e11c-20241220 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : reconstructPar -latestTime
+Date   : Dec 23 2025
+Time   : 10:48:34
+Host   : ubuntu-linux-2404
+PID    : 39441
+I/O    : uncollated
+Case   : /home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Reconstructing fields
+region=region0
+
+Time = 15174
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        nuCorrected
+        p
+
+    Reconstructing volVectorFields
+
+        U
+Using dynamicCode for patch walls on field U at line 58021 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor0/15174/U/boundaryField/walls"
+Using dynamicCode for patch fixedWalls_inorganic on field U at line 61991 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor0/15174/U/boundaryField/fixedWalls_inorganic"
+Using dynamicCode for patch fixedWalls_organic on field U at line 66260 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor0/15174/U/boundaryField/fixedWalls_organic"
+Using dynamicCode for patch fixedWalls_clay on field U at line 66750 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor0/15174/U/boundaryField/fixedWalls_clay"
+Using dynamicCode for patch walls on field U at line 57694 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor1/15174/U/boundaryField/walls"
+Using dynamicCode for patch fixedWalls_inorganic on field U at line 59242 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor1/15174/U/boundaryField/fixedWalls_inorganic"
+Using dynamicCode for patch fixedWalls_organic on field U at line 63557 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor1/15174/U/boundaryField/fixedWalls_organic"
+Using dynamicCode for patch fixedWalls_clay on field U at line 66501 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor1/15174/U/boundaryField/fixedWalls_clay"
+Using dynamicCode for patch walls on field U at line 57723 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor2/15174/U/boundaryField/walls"
+Using dynamicCode for patch fixedWalls_inorganic on field U at line 62259 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor2/15174/U/boundaryField/fixedWalls_inorganic"
+Using dynamicCode for patch fixedWalls_organic on field U at line 66652 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor2/15174/U/boundaryField/fixedWalls_organic"
+Using dynamicCode for patch fixedWalls_clay on field U at line 66679 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor2/15174/U/boundaryField/fixedWalls_clay"
+Using dynamicCode for patch walls on field U at line 57669 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor3/15174/U/boundaryField/walls"
+Using dynamicCode for patch fixedWalls_inorganic on field U at line 62155 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor3/15174/U/boundaryField/fixedWalls_inorganic"
+Using dynamicCode for patch fixedWalls_organic on field U at line 67580 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor3/15174/U/boundaryField/fixedWalls_organic"
+Using dynamicCode for patch fixedWalls_clay on field U at line 68658 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor3/15174/U/boundaryField/fixedWalls_clay"
+Using dynamicCode for patch walls on field U at line 57583 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor4/15174/U/boundaryField/walls"
+Using dynamicCode for patch fixedWalls_inorganic on field U at line 62067 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor4/15174/U/boundaryField/fixedWalls_inorganic"
+Using dynamicCode for patch fixedWalls_organic on field U at line 66698 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor4/15174/U/boundaryField/fixedWalls_organic"
+Using dynamicCode for patch fixedWalls_clay on field U at line 67292 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor4/15174/U/boundaryField/fixedWalls_clay"
+Using dynamicCode for patch walls on field U at line 57910 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor5/15174/U/boundaryField/walls"
+Using dynamicCode for patch fixedWalls_inorganic on field U at line 60239 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor5/15174/U/boundaryField/fixedWalls_inorganic"
+Using dynamicCode for patch fixedWalls_organic on field U at line 62604 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor5/15174/U/boundaryField/fixedWalls_organic"
+Using dynamicCode for patch fixedWalls_clay on field U at line 65342 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor5/15174/U/boundaryField/fixedWalls_clay"
+Using dynamicCode for patch walls on field U at line 57618 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor6/15174/U/boundaryField/walls"
+Using dynamicCode for patch fixedWalls_inorganic on field U at line 59856 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor6/15174/U/boundaryField/fixedWalls_inorganic"
+Using dynamicCode for patch fixedWalls_organic on field U at line 61924 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor6/15174/U/boundaryField/fixedWalls_organic"
+Using dynamicCode for patch fixedWalls_clay on field U at line 63864 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor6/15174/U/boundaryField/fixedWalls_clay"
+Using dynamicCode for patch walls on field U at line 57354 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor7/15174/U/boundaryField/walls"
+Using dynamicCode for patch fixedWalls_inorganic on field U at line 60742 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor7/15174/U/boundaryField/fixedWalls_inorganic"
+Using dynamicCode for patch fixedWalls_organic on field U at line 64073 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor7/15174/U/boundaryField/fixedWalls_organic"
+Using dynamicCode for patch fixedWalls_clay on field U at line 65257 in "/home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel/processor7/15174/U/boundaryField/fixedWalls_clay"
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+
+End
+

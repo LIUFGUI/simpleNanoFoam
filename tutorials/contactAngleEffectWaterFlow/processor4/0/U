@@ -1,0 +1,109 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       volVectorField;
+    location    "0";
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    walls
+    {
+        type            codedMixed;
+        refValue        uniform (0 0 0);
+        refGradient     uniform (0 0 0);
+        valueFraction   uniform 0;
+        source          uniform (0 0 0);
+        value           uniform (0 0 0);
+        name            walls;
+        code            #{
+    		const scalar slipLength = 0.41e-9;
+    		const scalarField delta = patch().deltaCoeffs();
+		const vectorField nHat = patch().nf();
+    		const vectorField pif = patchInternalField();
+    		
+    		const scalarField valueF = 1.0 / (1.0 + slipLength * delta);
+
+    		Field<vector> refVal(patch().size(), vector::zero);
+    		const tensorField IField(nHat.size(), tensor::I);
+    		Field<vector> Utan = transform(IField - sqr(nHat), pif);
+    		Field<vector> val = (1.0 - valueF) * Utan + valueF * refVal;
+
+    		operator==(val);
+    		refValue() = refVal;
+    		valueFraction() = valueF;
+        #};
+    }
+    inlet
+    {
+        type            zeroGradient;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    frontandback
+    {
+        type            empty;
+    }
+    fixedWalls
+    {
+        type            codedMixed;
+        refValue        uniform (0 0 0);
+        refGradient     uniform (0 0 0);
+        valueFraction   uniform 0;
+        source          uniform (0 0 0);
+        value           uniform (0 0 0);
+        name            fixedWalls;
+        code            #{
+    		const scalar slipLength = 0.41e-9;
+    		const scalarField delta = patch().deltaCoeffs();
+		const vectorField nHat = patch().nf();
+    		const vectorField pif = patchInternalField();
+    		
+    		const scalarField valueF = 1.0 / (1.0 + slipLength * delta);
+
+    		Field<vector> refVal(patch().size(), vector::zero);
+    		const tensorField IField(nHat.size(), tensor::I);
+    		Field<vector> Utan = transform(IField - sqr(nHat), pif);
+    		Field<vector> val = (1.0 - valueF) * Utan + valueF * refVal;
+
+    		operator==(val);
+    		refValue() = refVal;
+    		valueFraction() = valueF;
+        #};
+    }
+    procBoundary4to1
+    {
+        type            processor;
+        value           uniform (0 0 0);
+    }
+    procBoundary4to5
+    {
+        type            processor;
+        value           uniform (0 0 0);
+    }
+    procBoundary4to7
+    {
+        type            processor;
+        value           uniform (0 0 0);
+    }
+}
+
+
+// ************************************************************************* //

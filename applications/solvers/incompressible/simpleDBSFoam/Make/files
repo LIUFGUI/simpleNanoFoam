@@ -1,0 +1,3 @@
+simpleDBSFoam.C
+
+EXE = $(nanoFOAM_APPBIN)/simpleDBSFoam

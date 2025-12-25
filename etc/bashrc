@@ -1,0 +1,43 @@
+# .bashrc
+
+# Change according to your simpleNanoFoam installation directory
+nanoFOAM_DIR=$HOME/works/simpleNanoFoam
+nanoFOAM_SRC=$nanoFOAM_DIR/src
+nanoFOAM_APPBIN=$nanoFOAM_DIR/bin
+nanoFOAM_LIBBIN=$nanoFOAM_DIR/lib
+nanoFOAM_TUTORIALS=$nanoFOAM_DIR/tutorials
+nanoFOAM_IMG=$nanoFOAM_DIR/images
+nanoFOAM_RUNS=$nanoFOAM_DIR/runs
+
+# Change according to your openfoam installation directory
+#export FOAM_INST_DIR=/usr/lib/openfoam
+#source /usr/lib/openfoam/openfoam2212/etc/bashrc
+export FOAM_INST_DIR=$HOME/OpenFOAM
+source $HOME/OpenFOAM/OpenFOAM-v2412/etc/bashrc
+#export FOAM_INST_DIR=/opt/OpenFOAM
+#source /opt/OpenFOAM/OpenFOAM-v2106/etc/bashrc
+
+export nanoFOAM_DIR
+export nanoFOAM_SRC
+export nanoFOAM_APPBIN
+export nanoFOAM_LIBBIN
+export nanoFOAM_TUTORIALS
+export nanoFOAM_IMG
+export nanoFOAM_RUNS
+
+alias run='cd $nanoFOAM_RUNS'
+alias img='cd $nanoFOAM_IMG'
+
+
+
+export PATH=$PATH:$nanoFOAM_APPBIN
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$nanoFOAM_LIBBIN
+
+export PATH=$PATH:$MPI_ARCH_PATH/include
+
+alias dir='cd $nanoFOAM_DIR'
+alias src='cd $nanoFOAM_DIR/src'
+alias app='cd $nanoFOAM_DIR/applications'
+alias tut='cd $nanoFOAM_DIR/tutorials'
+
+echo "Welcome to simpleNanoFoam!"

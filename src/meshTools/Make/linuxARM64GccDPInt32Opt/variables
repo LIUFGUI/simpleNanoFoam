@@ -1,0 +1,1 @@
+LIB = $(nanoFOAM_LIBBIN)/libmeshToolsNanoFOAM

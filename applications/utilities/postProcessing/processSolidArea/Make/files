@@ -1,0 +1,3 @@
+processSolidArea.C
+
+EXE = $(nanoFOAM_APPBIN)/processSolidArea

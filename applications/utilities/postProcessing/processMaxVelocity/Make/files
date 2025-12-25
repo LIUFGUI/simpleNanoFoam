@@ -1,0 +1,3 @@
+processMaxVelocity.C
+
+EXE = $(nanoFOAM_APPBIN)/processMaxVelocity

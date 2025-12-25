@@ -1,0 +1,197 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _8dbc61e11c-20241220 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : decomposePar
+Date   : Sep 10 2025
+Time   : 20:46:55
+Host   : ubuntu-linux-2404
+PID    : 4403
+I/O    : uncollated
+Case   : /home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/slipLengthEffect/inorgCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh
+
+Create mesh
+
+Calculating distribution of cells
+Decomposition method scotch [8] (region region0)
+
+Finished decomposition in 0.28 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 140058
+    Number of points = 281816
+    Number of faces shared with processor 1 = 425
+    Number of faces shared with processor 3 = 445
+    Number of faces shared with processor 7 = 436
+    Number of processor patches = 3
+    Number of processor faces = 1306
+    Number of boundary faces = 280508
+
+Processor 1
+    Number of cells = 140405
+    Number of points = 282582
+    Number of faces shared with processor 0 = 425
+    Number of faces shared with processor 2 = 324
+    Number of faces shared with processor 3 = 197
+    Number of faces shared with processor 6 = 419
+    Number of faces shared with processor 7 = 19
+    Number of processor patches = 5
+    Number of processor faces = 1384
+    Number of boundary faces = 281196
+
+Processor 2
+    Number of cells = 140701
+    Number of points = 283226
+    Number of faces shared with processor 1 = 324
+    Number of faces shared with processor 3 = 623
+    Number of processor patches = 2
+    Number of processor faces = 947
+    Number of boundary faces = 282277
+
+Processor 3
+    Number of cells = 140672
+    Number of points = 283184
+    Number of faces shared with processor 0 = 445
+    Number of faces shared with processor 1 = 197
+    Number of faces shared with processor 2 = 623
+    Number of processor patches = 3
+    Number of processor faces = 1265
+    Number of boundary faces = 281917
+
+Processor 4
+    Number of cells = 140570
+    Number of points = 282910
+    Number of faces shared with processor 5 = 540
+    Number of faces shared with processor 6 = 388
+    Number of processor patches = 2
+    Number of processor faces = 928
+    Number of boundary faces = 281980
+
+Processor 5
+    Number of cells = 140887
+    Number of points = 283480
+    Number of faces shared with processor 4 = 540
+    Number of faces shared with processor 6 = 16
+    Number of faces shared with processor 7 = 510
+    Number of processor patches = 3
+    Number of processor faces = 1066
+    Number of boundary faces = 282412
+
+Processor 6
+    Number of cells = 140678
+    Number of points = 283092
+    Number of faces shared with processor 1 = 419
+    Number of faces shared with processor 4 = 388
+    Number of faces shared with processor 5 = 16
+    Number of faces shared with processor 7 = 479
+    Number of processor patches = 4
+    Number of processor faces = 1302
+    Number of boundary faces = 281788
+
+Processor 7
+    Number of cells = 141029
+    Number of points = 283868
+    Number of faces shared with processor 0 = 436
+    Number of faces shared with processor 1 = 19
+    Number of faces shared with processor 5 = 510
+    Number of faces shared with processor 6 = 479
+    Number of processor patches = 4
+    Number of processor faces = 1444
+    Number of boundary faces = 282422
+
+Number of processor faces = 4821
+Max number of cells = 141029 (0.28728889% above average 140625)
+Max number of processor patches = 5 (53.846154% above average 3.25)
+Max number of faces between processors = 1444 (19.809168% above average 1205.25)
+
+Time = 0
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 118
+    Reading "constant/phreeqcReactions" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "constant";
+    object      phreeqcReactions;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 118
+    Reading "constant/GeoChem.dat" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "constant";
+    object      GeoChem.dat;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+Processor 4: field transfer
+Processor 5: field transfer
+Processor 6: field transfer
+Processor 7: field transfer
+
+End
+

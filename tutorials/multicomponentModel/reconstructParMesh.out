@@ -1,0 +1,118 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _8dbc61e11c-20241220 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : reconstructParMesh -constant
+Date   : Sep 19 2025
+Time   : 15:53:52
+Host   : ubuntu-linux-2404
+PID    : 47046
+I/O    : uncollated
+Case   : /home/parallels/works/GeoChemFoam-5.1/runs/nanoPorousMedia1f/2DmicroPorousModel/multicomponentModel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Merge individual processor meshes back into one master mesh.
+Use if the original master mesh has been deleted or the processor meshes
+have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge assuming correct, fully matched procBoundaries.
+
+Found 8 processor directories
+    Reading database "multicomponentModel/processor0"
+    Reading database "multicomponentModel/processor1"
+    Reading database "multicomponentModel/processor2"
+    Reading database "multicomponentModel/processor3"
+    Reading database "multicomponentModel/processor4"
+    Reading database "multicomponentModel/processor5"
+    Reading database "multicomponentModel/processor6"
+    Reading database "multicomponentModel/processor7"
+
+Time = constant
+
+
+Writing merged mesh to "constant/polyMesh"
+
+Reconstructing addressing from processor meshes to the newly reconstructed mesh
+
+Processor 0
+Read processor mesh: "multicomponentModel/processor0"
+Writing addressing : "multicomponentModel/processor0/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 1
+Read processor mesh: "multicomponentModel/processor1"
+Writing addressing : "multicomponentModel/processor1/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 2
+Read processor mesh: "multicomponentModel/processor2"
+Writing addressing : "multicomponentModel/processor2/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 3
+Read processor mesh: "multicomponentModel/processor3"
+Writing addressing : "multicomponentModel/processor3/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 4
+Read processor mesh: "multicomponentModel/processor4"
+Writing addressing : "multicomponentModel/processor4/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 5
+Read processor mesh: "multicomponentModel/processor5"
+Writing addressing : "multicomponentModel/processor5/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 6
+Read processor mesh: "multicomponentModel/processor6"
+Writing addressing : "multicomponentModel/processor6/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 7
+Read processor mesh: "multicomponentModel/processor7"
+Writing addressing : "multicomponentModel/processor7/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+End
+
