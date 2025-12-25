@@ -4,4 +4,4 @@ This solver and some utilities were developed based on GeoChemFoam (https://gith
 which is the world's most advanced open source pore-scale numerical simulator based on OpenFOAM founded 
 at the Institute of GeoEnergy Engineering at Heriot-Watt University in 2019 by Dr Julien Maes and Dr Hannah Menke.
 
-For more information, feel free to contact Fugui Liu (liufgui@s.upc.edu.cn)
+For further information, please contact Fugui Liu (liufgui@s.upc.edu.cn)
